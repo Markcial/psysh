@@ -30,11 +30,10 @@ interface Presenter
      * Present a reference to the value.
      *
      * @param mixed   $value
-     * @param Boolean $color
      *
      * @return string
      */
-    public function presentRef($value, $color = false);
+    public function presentRef($value);
 
     /**
      * Present a full representation of the value.
@@ -43,9 +42,8 @@ interface Presenter
      *
      * @param mixed $value
      * @param int   $depth (default: null)
-     * @param bool  $color (default: false)
      *
      * @return string
      */
-    public function present($value, $depth = null, $color = false);
+    public function present($value, $depth = null);
 }
